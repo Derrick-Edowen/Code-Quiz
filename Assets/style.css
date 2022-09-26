@@ -7,6 +7,11 @@
 body {
     margin: 50px;
 }
+.p {
+text-align: center;
+font-size: 50px;
+font-family: Arial, Helvetica, sans-serif;
+}
 p {
 text-align: center;
 font-size: 50px;
@@ -21,7 +26,7 @@ font-family: Arial, Helvetica, sans-serif;
     text-align: right;
     font-size: 20px;
 }
-.start {
+#startQuiz {
     align-content: center;
     margin: 0 auto;
     display: block;
@@ -29,6 +34,49 @@ font-family: Arial, Helvetica, sans-serif;
     color: antiquewhite;
     border-radius: 8px;
     font-size: 35px;
+    background-color: blueviolet;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.answer {
+    text-align: center;
+font-size: 50px;
+font-family: Arial, Helvetica, sans-serif;
+margin: 20px;
+border-radius: 8px;
+background-color: darkslateblue;
+color: antiquewhite;
+}
+.answersContainer {
+
+}
+.post {
+    text-align: center;
+    font-size: 30px;
+    color: dimgrey;
+    padding: 0px;
+    margin: 10px;
+    border: 20px;
+    border-color: dimgrey;
+}
+.submitBtn {
+    align-content:flex-end;
+    margin: 0 auto;
+    display: block;
+    padding: 15px;
+    color: antiquewhite;
+    border-radius: 8px;
+    font-size: 15px;
+    background-color: blueviolet;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.backBtn {
+    align-content:flex-end;
+    margin: 0 auto;
+    display: block;
+    padding: 15px;
+    color: antiquewhite;
+    border-radius: 8px;
+    font-size: 12px;
     background-color: blueviolet;
     font-family: Arial, Helvetica, sans-serif;
 }

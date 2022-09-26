@@ -8,12 +8,56 @@
     <title>Document</title>
 </head>
 <body>
-    <nav class= "Score">View High Scores</nav>
-    <nav class= "time">Time Remaining:</nav>
-    <h3 class="headTitle">Coding Quiz Challenge</h3>
-    <p>Try to answer the following code-related questions within the time limit. 
+    <div>
+    <nav id= "Score" class ='Score'>View High Scores</nav>
+    <nav id= "time" class = 'time'>Time Remaining: 45</nav>
+</div>
+<div class = 'homePage'>
+    <h3 id="headTitle" class = 'headTitle'>Coding Quiz Challenge</h3>
+    <p id= "questions" class = 'questions'>Try to answer the following code-related questions within the time limit. 
         Keep in mind that incorrect answers will penalize your score/time by 10 seconds!</p>
-        <button class= "start">Start Quiz</button>
-    <script src="assets/script.js"></script>
+    <button id='startQuiz'>Start Quiz</button>
+</div>
+
+<div id='game'>
+<div>
+    <h3 id= 'questionContainer' class="p">This is a Question</h3>
+
+    <div id= 'answersContainer'>
+        <div class = 'answer' data-content='1'> An answer</div>
+        <div class = 'answer' data-content='2'> An answer</div>
+        <div class = 'answer' data-content='3'> An answer</div>
+        <div class = 'answer' data-content='4'> An answer</div>
+    </div>
+
+    </div>
+
+    <div id='result' class='post'>Correct!/Wrong!</div>
+
+</div>
+
+<div id = "afterScreen">
+    <h3 class='p'>All Done!</h3>
+    <p>Your Final Score is:</p>
+    <p>Enter initials: </p>
+    <button class="submitBtn">Submit</button>
+</div>
+
+<div id ='highScore'>
+    <h3 class='p'>High Scores</h3>
+    <div id='initialScore' class="p">AB</div>
+    <div>
+    <button class="backBtn">Back</button> 
+    <button class="backBtn">Clear</button>
+    </div>
+</div>
+
+
+
+
+
+
+
+    <script src="Assets/script.js"></script>
 </body>
 </html>
