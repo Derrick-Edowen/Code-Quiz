@@ -19,14 +19,14 @@ font-family: Arial, Helvetica, sans-serif;
 }
 .Score {
     text-align: left;
-    font-size: 20px;
+    font-size: 30px;
     color: blueviolet;
 }
-.time {
+.time-text {
     text-align: right;
-    font-size: 20px;
+    font-size: 30px;
 }
-#startQuiz {
+.startQuiz {
     align-content: center;
     margin: 0 auto;
     display: block;
@@ -37,17 +37,22 @@ font-family: Arial, Helvetica, sans-serif;
     background-color: blueviolet;
     font-family: Arial, Helvetica, sans-serif;
 }
+.startQuiz:hover {
+    background-color: aqua;
+}
 .answer {
-    text-align: center;
+text-align: center;
 font-size: 50px;
 font-family: Arial, Helvetica, sans-serif;
 margin: 20px;
-border-radius: 8px;
+border-radius: 10px;
 background-color: darkslateblue;
 color: antiquewhite;
+display:block;
+width: 50%;
 }
-.answersContainer {
-
+.answer:hover {
+    background-color: blueviolet;
 }
 .post {
     text-align: center;

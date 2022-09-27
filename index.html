@@ -8,37 +8,36 @@
     <title>Document</title>
 </head>
 <body>
-    <div>
+<div>
     <nav id= "Score" class ='Score'>View High Scores</nav>
-    <nav id= "time" class = 'time'>Time Remaining: 45</nav>
+    <nav id= "time" class = 'time-text'>60 seconds remaining</nav>
 </div>
-<div class = 'homePage'>
+<div id = 'homePage'>
     <h3 id="headTitle" class = 'headTitle'>Coding Quiz Challenge</h3>
     <p id= "questions" class = 'questions'>Try to answer the following code-related questions within the time limit. 
         Keep in mind that incorrect answers will penalize your score/time by 10 seconds!</p>
-    <button id='startQuiz'>Start Quiz</button>
+    <button class='startQuiz'>Start Quiz</button>
 </div>
 
 <div id='game'>
-<div>
+
     <h3 id= 'questionContainer' class="p">This is a Question</h3>
 
-    <div id= 'answersContainer'>
-        <div class = 'answer' data-content='1'> An answer</div>
-        <div class = 'answer' data-content='2'> An answer</div>
-        <div class = 'answer' data-content='3'> An answer</div>
-        <div class = 'answer' data-content='4'> An answer</div>
+    <div id = 'answersContainer'>
+        <button id = 'answer1' class = "answer" data-content='1'> An answer</button>
+        <button id = 'answer2' class = "answer" data-content='2'> An answer</button>
+        <button id = 'answer3' class = "answer" data-content='3'> An answer</button>
+        <button id = 'answer4' class = "answer" data-content='4'> An answer</button>
     </div>
 
-    </div>
 
-    <div id='result' class='post'>Correct!/Wrong!</div>
+    <div id='result' class='post'>jojn</div>
 
 </div>
 
 <div id = "afterScreen">
     <h3 class='p'>All Done!</h3>
-    <p>Your Final Score is:</p>
+    <p id = 'finalScore'>Your Final Score is:</p>
     <p>Enter initials: </p>
     <button class="submitBtn">Submit</button>
 </div>
