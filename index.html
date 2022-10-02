@@ -5,9 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Assets/style.css">
-    <title>Document</title>
+    <title>Home Page</title>
 </head>
 <body>
+
+
+
+<!--Initial home page-->
 <div>
     <nav id= "Score" class ='Score'>View High Scores</nav>
     <nav id= "time" class = 'time-text'>60 seconds remaining</nav>
@@ -19,22 +23,90 @@
     <button class='startQuiz'>Start Quiz</button>
 </div>
 
-<div id='game'>
 
-    <h3 id= 'questionContainer' class="p">This is a Question</h3>
+<!--First game page-->
+<div id='game1'>
+
+    <h3 id= 'questionContainer' class="p">Commonly used data types DO Not Include:</h3>
 
     <div id = 'answersContainer'>
-        <button id = 'answer1' class = "answer" data-content='1'> An answer</button>
-        <button id = 'answer2' class = "answer" data-content='2'> An answer</button>
-        <button id = 'answer3' class = "answer" data-content='3'> An answer</button>
-        <button id = 'answer4' class = "answer" data-content='4'> An answer</button>
+        <button id = 'answer1' class = "answer" data-content=0>1. Strings</button>
+        <button id = 'answer2' class = "answer" data-content=0>2. Booleans</button>
+        <button id = 'answer3' class = "answer" data-content=1>3. Alerts</button>
+        <button id = 'answer4' class = "answer" data-content=0>4. Numbers</button>
     </div>
-
-
-    <div id='result' class='post'>jojn</div>
+    <div id='result' class='post'></div>
 
 </div>
 
+<div id='game2'>
+
+    <h3 id= 'questionContainer' class="p">The condition in an if/else statement is enclosed with______.</h3>
+
+    <div id = 'answersContainer'>
+        <button id = 'answer5' class = "answer" data-content=0> 1. Quotes </button>
+        <button id = 'answer6' class = "answer" data-content=0> 2. Curly Brackets </button>
+        <button id = 'answer7' class = "answer" data-content=1> 3. Parenthesis </button>
+        <button id = 'answer8' class = "answer" data-content=0> 4. Square Brackets </button>
+    </div>
+
+
+    <div id='result' class='post'></div>
+
+</div>
+
+
+<div id='game3'>
+
+    <h3 id= 'questionContainer' class="p">Arrays in JavaScript can be used to store ________.</h3>
+
+    <div id = 'answersContainer'>
+        <button id = 'answer9' class = "answer" data-content=0> 1. Numbers and Strings </button>
+        <button id = 'answer10' class = "answer" data-content=0> 2. Other Arrays </button>
+        <button id = 'answer11' class = "answer" data-content=0> 3. Booleans </button>
+        <button id = 'answer12' class = "answer" data-content=1> 4. All of the Above </button>
+    </div>
+
+
+    <div id='result' class='post'></div>
+
+</div>
+
+
+<div id='game4'>
+
+    <h3 id= 'questionContainer' class="p">String values must be enclosed within ________ when being assigned to variables.</h3>
+
+    <div id = 'answersContainer'>
+        <button id = 'answer13' class = "answer" data-content=0> 1. Commas </button>
+        <button id = 'answer14' class = "answer" data-content=0> 2. Curly Brackets </button>
+        <button id = 'answer15' class = "answer" data-content=1> 3. Quotes </button>
+        <button id = 'answer16' class = "answer" data-content=0> 4. Parenthesis </button>
+    </div>
+
+
+    <div id='result' class='post'></div>
+
+</div>
+
+
+<div id='game5'>
+
+    <h3 id= 'questionContainer' class="p">A very useful tool used during development and debugging for printing content to the debugger is:</h3>
+
+    <div id = 'answersContainer'>
+        <button id = 'answer17' class = "answer" data-content=0> 1. JavaScript </button>
+        <button id = 'answer18' class = "answer" data-content=0> 2. Terminal/Bash </button>
+        <button id = 'answer19' class = "answer" data-content=0> 3. For Loops </button>
+        <button id = 'answer20' class = "answer" data-content=1> 4. Console Log </button>
+    </div>
+
+
+    <div id='result' class='post'></div>
+
+</div>
+
+<!--Final score page-->
 <div id = "afterScreen">
     <h3 class='p'>All Done!</h3>
     <p id = 'finalScore'>Your Final Score is:</p>
@@ -42,6 +114,7 @@
     <button class="submitBtn">Submit</button>
 </div>
 
+<!--highscore page-->
 <div id ='highScore'>
     <h3 class='p'>High Scores</h3>
     <div id='initialScore' class="p">AB</div>

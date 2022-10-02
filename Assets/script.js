@@ -1,75 +1,172 @@
-var quesIndex;
+var timerCount=40;
+var score =0;
 
-var questionBank = 
-[
- 'Commonly used data types DO Not Include: ',
- 'The condition in an if/else statement is enclosed with______. ',
- 'Arrays in JavaScript can be used to store ________.',
- 'String values must be enclosed within ________ when being assigned to variables.',
- 'A very useful tool used during development and debugging for printing content to the debugger is:'
-];
-var answerSet1 = 
-[
-'1. Strings',
-'2. Booleans',
-'3. Alerts',
-'4. Numbers'
-];
-var answerSet2 = 
-[
-    '1. Quotes',
-    '2. Curly Brackets',
-    '3. Parenthesis',
-    '4. Square Brackets'
-];
-var answerSet3 = 
-[
-    '1. Numbers and Strings',
-    '2. Other Arrays',
-    '3. Booleans',
-    '4. All of the Above'
-];
-var answerSet4 = 
-[
-    '1. Commas',
-    '2. Curly Brackets',
-    '3. Quotes',
-    '4. Parenthesis'
-];
-var answerSet5 = 
-[
-    '1. JavaScript',
-    '2. Terminal/Bash',
-    '3. For Loops',
-    '4. Console Log'
-];
+var answer1 = document.getElementById('answer1');
+var answer2 = document.getElementById('answer2');
+var answer3 = document.getElementById('answer3');
+var answer4 = document.getElementById('answer4');
 
-var userChoice;
-var timer;
-var timerCount;
-var score = 0;
-var questionsElement = document.getElementById('questionContainer');
-var answer1Element = document.getElementById('answer1');
-var answer2Element = document.getElementById('answer2');
-var answer3Element = document.getElementById('answer3');
-var answer4Element = document.getElementById('answer4');
-var finalScore = document.getElementById('finalScore');
-var resultElement = document.getElementById('result');
+var answer5 = document.getElementById('answer5');
+var answer6 = document.getElementById('answer6');
+var answer7 = document.getElementById('answer7');
+var answer8 = document.getElementById('answer8');
 
-document.getElementById('game').style.display = 'none';
+var answer9 = document.getElementById('answer9');
+var answer10 = document.getElementById('answer10');
+var answer11 = document.getElementById('answer11');
+var answer12 = document.getElementById('answer12');
+
+var answer13 = document.getElementById('answer13');
+var answer14 = document.getElementById('answer14');
+var answer15 = document.getElementById('answer15');
+var answer16 = document.getElementById('answer16');
+
+var answer17 = document.getElementById('answer17');
+var answer18 = document.getElementById('answer18');
+var answer19 = document.getElementById('answer19');
+var answer20 = document.getElementById('answer20');
+
+
+
+
+var result = document.getElementById('result');
+
+document.getElementById('game1').style.display = 'none';
+document.getElementById('game2').style.display = 'none';
+document.getElementById('game3').style.display = 'none';
+document.getElementById('game4').style.display = 'none';
+document.getElementById('game5').style.display = 'none';
 document.getElementById('afterScreen').style.display = 'none';
 document.getElementById('highScore').style.display = 'none';
 
 
-function startGame() {
-document.getElementById('homePage').style.display = 'none';
-document.getElementById('game').style.display = 'block';
-timerCount = 60;
-finalScore = 0;
-startTimer()
-playGame1()
 
+
+
+
+
+
+
+
+
+
+
+
+function startGame() {
+    startTimer()
+    document.getElementById('game1').style.display = 'block';
+    document.getElementById('homePage').style.display = 'none';
+    answer1.addEventListener("click", selectedAnswer1);
+    answer2.addEventListener("click", selectedAnswer1);
+    answer3.addEventListener("click", selectedAnswer1);
+    answer4.addEventListener("click", selectedAnswer1);
 }
+
+    function selectedAnswer1(e) {
+    var selectedButton = e.target
+    if (selectedButton === answer3) {
+        score=score+1;
+        result.innerHTML = "Correct!";
+        game2()
+    } else if (selectedButton !== answer3){
+        timerCount=timerCount-10;
+        result.innerHTML = "Wrong!";
+        game2()
+    }
+    
+    }
+   
+
+function game2() {
+    document.getElementById('game2').style.display = 'block';
+    document.getElementById('game1').style.display = 'none';
+    answer5.addEventListener("click", selectedAnswer2);
+    answer6.addEventListener("click", selectedAnswer2);
+    answer7.addEventListener("click", selectedAnswer2);
+    answer8.addEventListener("click", selectedAnswer2);
+}
+    function selectedAnswer2(e) {
+    var selectedButton = e.target
+    if (selectedButton === answer7) {
+      score=score+1;
+      result.innerHTML = "Correct!";
+      game3()
+    } else if (selectedButton !== answer7){
+        timerCount=timerCount-10;
+        result.innerHTML = "Wrong!";
+        game3()
+    }
+
+    }
+
+
+function game3() {
+    document.getElementById('game3').style.display = 'block';
+    document.getElementById('game2').style.display = 'none';
+    answer9.addEventListener("click", selectedAnswer3);
+    answer10.addEventListener("click", selectedAnswer3);
+    answer11.addEventListener("click", selectedAnswer3);
+    answer12.addEventListener("click", selectedAnswer3);
+}
+    function selectedAnswer3(e) {
+        var selectedButton = e.target
+        if (selectedButton === answer12) {
+          score=score+1;
+          result.innerHTML = "Correct!";
+          game4()
+        } else if (selectedButton !== answer12){
+            timerCount=timerCount-10;
+            result.innerHTML = "Wrong!";
+            game4()
+        }
+    }
+
+function game4() {
+        document.getElementById('game4').style.display = 'block';
+        document.getElementById('game3').style.display = 'none';
+        answer13.addEventListener("click", selectedAnswer4);
+        answer14.addEventListener("click", selectedAnswer4);
+        answer15.addEventListener("click", selectedAnswer4);
+        answer16.addEventListener("click", selectedAnswer4);
+}
+        function selectedAnswer4(e) {
+            var selectedButton = e.target
+            if (selectedButton === answer15) {
+              score=score+1;
+              result.innerHTML = "Correct!";
+              game5()
+            } else if (selectedButton !== answer15){
+                timerCount=timerCount-10;
+                result.innerHTML = "Wrong!";
+                game5()
+            }
+        }
+
+        
+
+function game5() {
+        document.getElementById('game5').style.display = 'block';
+        document.getElementById('game4').style.display = 'none';
+        answer17.addEventListener("click", selectedAnswer5);
+        answer18.addEventListener("click", selectedAnswer5);
+        answer19.addEventListener("click", selectedAnswer5);
+        answer20.addEventListener("click", selectedAnswer5);
+}   
+        function selectedAnswer5(e) {
+        var selectedButton = e.target
+        if (selectedButton === answer20) {
+        score=score+1;
+        result.innerHTML = "Correct!";
+        allDone()
+        } else if (selectedButton !== answer20){
+        timerCount=timerCount-10;
+        result.innerHTML = "Wrong!"; 
+        allDone()      
+        }
+        }
+        
+
+
 
 function startTimer() {
     timer = setInterval(function () {
@@ -77,179 +174,22 @@ function startTimer() {
         document.getElementById('time').textContent = (timerCount + ' seconds remaining');
 
 
-        if (timerCount === 0) {
-            clearInterval(timer);
-            document.getElementById('game').style.display = 'none';
-            allDone();
-        }
+    if (timerCount <= 0) {
+        clearInterval(timer);
+        allDone();
+    }
     }, 1000);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-//Initial start
-function playGame1() {
-questionsElement.textContent = (questionBank[0]);
-answer1Element.textContent = (answerSet1[0]);
-answer2Element.textContent = (answerSet1[1]);
-answer3Element.textContent = (answerSet1[2]);
-answer4Element.textContent = (answerSet1[3]);
-answer1Element.addEventListener("click", playGame2);
-answer2Element.addEventListener("click", playGame2);
-answer3Element.addEventListener("click", correct2);
-answer4Element.addEventListener("click", playGame2);
-}
-function playGame2() {
-    questionsElement.textContent = (questionBank[1]);
-    answer1Element.textContent = (answerSet2[0]);
-    answer2Element.textContent = (answerSet2[1]);
-    answer3Element.textContent = (answerSet2[2]);
-    answer4Element.textContent = (answerSet2[3]);
-resultElement.textContent = 'Wrong!';
-timerCount - 10;
-answer1Element.addEventListener("click", playGame3);
-answer2Element.addEventListener("click", playGame3);
-answer3Element.addEventListener("click", correct2);
-answer4Element.addEventListener("click", playGame3);
-}
-function playGame3() {
-    questionsElement.textContent = (questionBank[2]);
-    answer1Element.textContent = (answerSet3[0]);
-    answer2Element.textContent = (answerSet3[1]);
-    answer3Element.textContent = (answerSet3[2]);
-    answer4Element.textContent = (answerSet3[3]);
-    resultElement.textContent = 'Wrong!';
-    timerCount - 10;
-answer1Element.addEventListener("click", playGame4);
-answer2Element.addEventListener("click", playGame4);
-answer3Element.addEventListener("click", playGame4);
-answer4Element.addEventListener("click", correct3);
-}
-function playGame4() {
-    questionsElement.textContent = (questionBank[3]);
-    answer1Element.textContent = (answerSet4[0]);
-    answer2Element.textContent = (answerSet4[1]);
-    answer3Element.textContent = (answerSet4[2]);
-    answer4Element.textContent = (answerSet4[3]);
-    resultElement.textContent = 'Wrong!';
-    timerCount - 10;
-answer1Element.addEventListener("click", playGame5);
-answer2Element.addEventListener("click", playGame5);
-answer3Element.addEventListener("click", correct4);
-answer4Element.addEventListener("click", playGame5);
-}
-function playGame5() {
-    questionsElement.textContent = (questionBank[4]);
-    answer1Element.textContent = (answerSet5[0]);
-    answer2Element.textContent = (answerSet5[1]);
-    answer3Element.textContent = (answerSet5[2]);
-    answer4Element.textContent = (answerSet5[3]);
-    resultElement.textContent = 'Wrong!';
-    timerCount - 10;
-answer1Element.addEventListener("click", allDone);
-answer2Element.addEventListener("click", allDone);
-answer3Element.addEventListener("click", allDone);
-answer4Element.addEventListener("click", allDone);
-}
-
-
-
-
-
-
-
-
-
-//if the correct second button is pressed
-function correct2() {
-    questionsElement.textContent = (questionBank[1]);
-    answer1Element.textContent = (answerSet2[0]);
-    answer2Element.textContent = (answerSet2[1]);
-    answer3Element.textContent = (answerSet2[2]);
-    answer4Element.textContent = (answerSet2[3]);
-    resultElement.textContent = 'Correct!';
-    finalScore+1;
-    answer1Element.addEventListener("click", playGame2);
-    answer2Element.addEventListener("click", playGame2);
-    answer3Element.addEventListener("click", correct3);
-    answer4Element.addEventListener("click", playGame2);
-}
-function correct3() {
-    questionsElement.textContent = (questionBank[2]);
-    answer1Element.textContent = (answerSet3[0]);
-    answer2Element.textContent = (answerSet3[1]);
-    answer3Element.textContent = (answerSet3[2]);
-    answer4Element.textContent = (answerSet3[3]);
-    resultElement.textContent = 'Correct!';
-    finalScore+1;
-    answer1Element.addEventListener("click", playGame3);
-    answer2Element.addEventListener("click", playGame3);
-    answer3Element.addEventListener("click", playGame3);
-    answer4Element.addEventListener("click", correct4);
-    
-}
-function correct4() {
-    questionsElement.textContent = (questionBank[3]);
-    answer1Element.textContent = (answerSet4[0]);
-    answer2Element.textContent = (answerSet4[1]);
-    answer3Element.textContent = (answerSet4[2]);
-    answer4Element.textContent = (answerSet4[3]);
-    resultElement.textContent = 'Correct!';
-    finalScore+1;
-    answer1Element.addEventListener("click", playGame3);
-    answer2Element.addEventListener("click", playGame3);
-    answer3Element.addEventListener("click", correct5);
-    answer4Element.addEventListener("click", playGame3);
-}
-function correct5() {
-    questionsElement.textContent = (questionBank[4]);
-    answer1Element.textContent = (answerSet5[0]);
-    answer2Element.textContent = (answerSet5[1]);
-    answer3Element.textContent = (answerSet5[2]);
-    answer4Element.textContent = (answerSet5[3]);
-    resultElement.textContent = 'Correct!';
-    finalScore+1;
-    answer1Element.addEventListener("click", allDone);
-    answer2Element.addEventListener("click", allDone);
-    answer3Element.addEventListener("click", allDone);
-    answer4Element.addEventListener("click", allDone);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function selectAnswer(e) {
-    
-}
-
-
-
+};
 
 function allDone() {
-    clearInterval(timer);
-    document.getElementById('game').style.display = 'none';
     document.getElementById('afterScreen').style.display = 'block';
-    document.getElementById('finalScore').textContent = ('Your Final Score is ' + finalScore + '.');
+    document.getElementById('game1').style.display = 'none';
+    document.getElementById('game2').style.display = 'none';
+    document.getElementById('game3').style.display = 'none';
+    document.getElementById('game4').style.display = 'none';
+    document.getElementById('game5').style.display = 'none';
+    time.textContent = "0 second(s) remaining"
+    document.getElementById('finalScore').textContent = ('Your Final Score is ' + score + '.');
     var submitBtn = document.querySelector(".submitBtn");
     submitBtn.addEventListener('click', highScores); 
 }
@@ -257,6 +197,7 @@ function highScores() {
     document.getElementById('highScore').style.display = 'block';
     document.getElementById('afterScreen').style.display = 'none';
 }
+
 
 var startQuiz = document.querySelector(".startQuiz")
 startQuiz.addEventListener("click", startGame);
