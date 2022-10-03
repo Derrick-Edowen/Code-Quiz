@@ -13,8 +13,8 @@
 
 <!--Initial home page-->
 <div>
-    <nav id= "Score" class ='Score'>View High Scores</nav>
-    <nav id= "time" class = 'time-text'>60 seconds remaining</nav>
+    <button id= "score" class ='Score'>View High Scores</button>
+    <nav id= "time" class = 'time-text'>Time: 60</nav>
 </div>
 <div id = 'homePage'>
     <h3 id="headTitle" class = 'headTitle'>Coding Quiz Challenge</h3>
@@ -30,10 +30,10 @@
     <h3 id= 'questionContainer' class="p">Commonly used data types DO Not Include:</h3>
 
     <div id = 'answersContainer'>
-        <button id = 'answer1' class = "answer" data-content=0>1. Strings</button>
-        <button id = 'answer2' class = "answer" data-content=0>2. Booleans</button>
-        <button id = 'answer3' class = "answer" data-content=1>3. Alerts</button>
-        <button id = 'answer4' class = "answer" data-content=0>4. Numbers</button>
+        <button id = 'answer1' class = "answer" >1. Strings</button>
+        <button id = 'answer2' class = "answer" >2. Booleans</button>
+        <button id = 'answer3' class = "answer" >3. Alerts</button>
+        <button id = 'answer4' class = "answer" >4. Numbers</button>
     </div>
     <div id='result' class='post'></div>
 
@@ -44,10 +44,10 @@
     <h3 id= 'questionContainer' class="p">The condition in an if/else statement is enclosed with______.</h3>
 
     <div id = 'answersContainer'>
-        <button id = 'answer5' class = "answer" data-content=0> 1. Quotes </button>
-        <button id = 'answer6' class = "answer" data-content=0> 2. Curly Brackets </button>
-        <button id = 'answer7' class = "answer" data-content=1> 3. Parenthesis </button>
-        <button id = 'answer8' class = "answer" data-content=0> 4. Square Brackets </button>
+        <button id = 'answer5' class = "answer" > 1. Quotes </button>
+        <button id = 'answer6' class = "answer" > 2. Curly Brackets </button>
+        <button id = 'answer7' class = "answer" > 3. Parenthesis </button>
+        <button id = 'answer8' class = "answer" > 4. Square Brackets </button>
     </div>
 
 
@@ -61,10 +61,10 @@
     <h3 id= 'questionContainer' class="p">Arrays in JavaScript can be used to store ________.</h3>
 
     <div id = 'answersContainer'>
-        <button id = 'answer9' class = "answer" data-content=0> 1. Numbers and Strings </button>
-        <button id = 'answer10' class = "answer" data-content=0> 2. Other Arrays </button>
-        <button id = 'answer11' class = "answer" data-content=0> 3. Booleans </button>
-        <button id = 'answer12' class = "answer" data-content=1> 4. All of the Above </button>
+        <button id = 'answer9' class = "answer"  > 1. Numbers and Strings </button>
+        <button id = 'answer10' class = "answer" > 2. Other Arrays </button>
+        <button id = 'answer11' class = "answer" > 3. Booleans </button>
+        <button id = 'answer12' class = "answer" > 4. All of the Above </button>
     </div>
 
 
@@ -78,10 +78,10 @@
     <h3 id= 'questionContainer' class="p">String values must be enclosed within ________ when being assigned to variables.</h3>
 
     <div id = 'answersContainer'>
-        <button id = 'answer13' class = "answer" data-content=0> 1. Commas </button>
-        <button id = 'answer14' class = "answer" data-content=0> 2. Curly Brackets </button>
-        <button id = 'answer15' class = "answer" data-content=1> 3. Quotes </button>
-        <button id = 'answer16' class = "answer" data-content=0> 4. Parenthesis </button>
+        <button id = 'answer13' class = "answer" > 1. Commas </button>
+        <button id = 'answer14' class = "answer" > 2. Curly Brackets </button>
+        <button id = 'answer15' class = "answer" > 3. Quotes </button>
+        <button id = 'answer16' class = "answer" > 4. Parenthesis </button>
     </div>
 
 
@@ -95,10 +95,10 @@
     <h3 id= 'questionContainer' class="p">A very useful tool used during development and debugging for printing content to the debugger is:</h3>
 
     <div id = 'answersContainer'>
-        <button id = 'answer17' class = "answer" data-content=0> 1. JavaScript </button>
-        <button id = 'answer18' class = "answer" data-content=0> 2. Terminal/Bash </button>
-        <button id = 'answer19' class = "answer" data-content=0> 3. For Loops </button>
-        <button id = 'answer20' class = "answer" data-content=1> 4. Console Log </button>
+        <button id = 'answer17' class = "answer" > 1. JavaScript </button>
+        <button id = 'answer18' class = "answer" > 2. Terminal/Bash </button>
+        <button id = 'answer19' class = "answer" > 3. For Loops </button>
+        <button id = 'answer20' class = "answer" > 4. Console Log </button>
     </div>
 
 
@@ -110,24 +110,23 @@
 <div id = "afterScreen">
     <h3 class='p'>All Done!</h3>
     <p id = 'finalScore'>Your Final Score is:</p>
-    <p>Enter initials: </p>
+    <div id='container2'>
+    <input  type="text" name="Initials" id="initials" placeholder="Enter Initials"></input>
     <button class="submitBtn">Submit</button>
+    </div>
 </div>
 
 <!--highscore page-->
 <div id ='highScore'>
     <h3 class='p'>High Scores</h3>
-    <div id='initialScore' class="p">AB</div>
+    <ol id='initialScore' class="p"></ol>
     <div>
-    <button class="backBtn">Back</button> 
-    <button class="backBtn">Clear</button>
+    <div id='container'>
+    <button id = 'restart' class="button1">Restart</button> 
+    <button id = 'clear' class="button2">Clear High Scores</button>
+    </div>
     </div>
 </div>
-
-
-
-
-
 
 
     <script src="Assets/script.js"></script>
