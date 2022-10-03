@@ -11,10 +11,7 @@ In order to run this project a user must open the html file in their browser. Th
 Once the game has started the timer will countdown from 60 seconds and they will be prompt with the first question. After answering all 5 questions they will recieve their score.
 
 Deployed Project:
-![Project](../Password-Generator/Develop/Password-generator-1.png)
-
-## Credits
-
+![Project](./Assets/quiz-1.png)
 
 ## License
 N/A
